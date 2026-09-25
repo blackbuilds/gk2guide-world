@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Graveyard Keeper 2 Automation Checklist: Supplier &amp; Factory</title>
+  <meta name="description" content="Mid-game Graveyard Keeper 2 automation: supplier/porter pathing, storage, factory layout mistakes — companion to the zombies hub, not a building wiki." />
+  <link rel="canonical" href="https://gk2guide.world/graveyard-keeper-2-automation/" />
+  <meta property="og:title" content="Graveyard Keeper 2 Automation Checklist: Supplier &amp; Factory" />
+  <meta property="og:description" content="Mid-game Graveyard Keeper 2 automation: supplier/porter pathing, storage, factory layout mistakes — companion to the zombies hub, not a building wiki." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://gk2guide.world/graveyard-keeper-2-automation/" />
+  <!-- og:image TBD -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Graveyard Keeper 2 Automation Checklist: Supplier &amp; Factory" />
+  <meta name="twitter:description" content="Mid-game Graveyard Keeper 2 automation: supplier/porter pathing, storage, factory layout mistakes — companion to the zombies hub, not a building wiki." />
+  <link rel="stylesheet" href="/assets/site.css" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Graveyard Keeper 2 Automation: Supplier / Factory Checklist","description":"Mid-game Graveyard Keeper 2 automation: supplier/porter pathing, storage, factory layout mistakes — companion to the zombies hub, not a building wiki.","dateModified":"2026-09-26","author":{"@type":"Organization","name":"GK2 Guide"},"publisher":{"@type":"Organization","name":"GK2 Guide","url":"https://gk2guide.world/"},"mainEntityOfPage":"https://gk2guide.world/graveyard-keeper-2-automation/","inLanguage":"en","about":"Graveyard Keeper 2"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"When am I ready to automate vs still manually assigning?","acceptedAnswer":{"@type":"Answer","text":"When several zombies already complete jobs reliably. If assignment itself is broken, stay on the zombies hub."}},{"@type":"Question","name":"What do Supplier / Porter zombies do?","acceptedAnswer":{"@type":"Answer","text":"Supplier Station workers feed inputs to production; Supply Porters move packed factory supplies into Supply Storage. Carousel workers provide belt capacity — a different job."}},{"@type":"Question","name":"What layout mistakes break production?","acceptedAnswer":{"@type":"Answer","text":"Far storage, single mega-chest, missing porters, capacity shortfalls, expanding before one loop is stable — see mistake table."}},{"@type":"Question","name":"Which techs should I unlock before expanding the factory?","acceptedAnswer":{"@type":"Answer","text":"Zombie Assistant / Supplier Station first, then factory/carousel gates for the module you need — Tech Priority ."}},{"@type":"Question","name":"How does corpse/worker quality still matter?","acceptedAnswer":{"@type":"Answer","text":"Key stations still benefit from better perk slots. Prep on Autopsy and Red Skull Zombies ; don’t mass-replace every zombie at once."}},{"@type":"Question","name":"Where is the full zombie unlock guide?","acceptedAnswer":{"@type":"Answer","text":"Graveyard Keeper 2 Zombies — this page assumes workers exist."}}]}</script>
+  <!-- Google tag / Adsterra: TBD — leave empty until approved -->
+</head>
+<body class="layout-guide">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="/assets/media/header-keyart.jpg" alt="" width="34" height="34" />
+        </span>
+        <span class="brand-name">GK2 Guide</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+      <label for="nav-toggle" class="nav-toggle-btn" aria-label="Open menu"><span></span></label>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/graveyard-keeper-2-beginner-guide/">Beginner</a>
+        <a href="/graveyard-keeper-2-autopsy-skulls/">Autopsy</a>
+        <a href="/graveyard-keeper-2-zombies/">Zombies</a>
+        <a href="/graveyard-keeper-2-tech-tree-priority/">Tech</a>
+        <a href="/graveyard-keeper-2-dream-dust/">Dream Dust</a>
+        <a href="/graveyard-keeper-2-energy-food-bread/">Energy</a>
+        <a href="/graveyard-keeper-2-faith-sermons/">Faith</a>
+        <a href="/graveyard-keeper-2-automation/" aria-current="page" class="is-active">Automation</a>
+        <a href="/graveyard-keeper-2-red-skull-zombies/">Red Skull</a>
+        <a href="/graveyard-keeper-2-alchemy-runes/">Alchemy</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="guide">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li aria-current="page">Automation</li>
+      </ol>
+    </nav>
+    <p class="version-stamp">Checked for Graveyard Keeper 2 · patch 1.005 (as of 2026-09-26) — numbers may change; re-check after updates.</p>
+    <article class="guide-body">
+<h1>Graveyard Keeper 2 Automation: Supplier / Factory Checklist</h1>
+    <figure class="scene-figure">
+      <img src="/assets/media/ss-build-workspace.jpg" alt="Graveyard Keeper 2 build-mode yard: dashed build zones with saws, workbench, log stacks, and a stone furnace in production" width="1920" height="1080" loading="eager" decoding="async" />
+      <figcaption>Build-mode station layout — planning stations and pathing before supplier/factory mistakes pile up.</figcaption>
+    </figure>
+<p><strong>Checked for Graveyard Keeper 2 · patch 1.005 (as of 2026-09-26) — numbers may change; re-check after updates.</strong></p>
+<hr/>
+<p>This <strong>Graveyard Keeper 2</strong> page is for players who <strong>already have zombie workers</strong> but production is messy. Unlock/resurrect basics stay on the zombies hub — here we make automation stick.</p>
+<hr/>
+<h2>TL;DR — Automation readiness checklist</h2>
+<table>
+<thead>
+<tr>
+<th>Ready?</th>
+<th>Check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[ ]</td>
+<td>≥ few zombies reliably completing assigned jobs → <a href="/graveyard-keeper-2-zombies/">Zombies</a></td>
+</tr>
+<tr>
+<td>[ ]</td>
+<td>You understand corpse triage for worker quality → <a href="/graveyard-keeper-2-autopsy-skulls/">Autopsy</a> · <a href="/graveyard-keeper-2-red-skull-zombies/">Red Skull Zombies</a></td>
+</tr>
+<tr>
+<td>[ ]</td>
+<td>Storage exists near production (not across the map)</td>
+</tr>
+<tr>
+<td>[ ]</td>
+<td>Must-tier logistics/factory techs identified (start with <strong>Zombie Assistant</strong> / Supplier Station) → <a href="/graveyard-keeper-2-tech-tree-priority/">Tech</a></td>
+</tr>
+<tr>
+<td>[ ]</td>
+<td>You’re willing to rebuild a bad layout once</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Not ready yet?</strong> Stay on <a href="/graveyard-keeper-2-zombies/">Zombies</a> Stages 2–3.</p>
+<hr/>
+<h2>Prerequisites from zombies hub</h2>
+<p>Do <strong>not</strong> repeat unlock tutorial here.</p>
+<table>
+<thead>
+<tr>
+<th>Prerequisite</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dream Dust / Plague Doctor gate</td>
+<td><a href="/graveyard-keeper-2-dream-dust/">Dream Dust</a></td>
+</tr>
+<tr>
+<td>Resurrection + first workers</td>
+<td><a href="/graveyard-keeper-2-zombies/">Zombies</a> Stage 2</td>
+</tr>
+<tr>
+<td>Manual assign working</td>
+<td><a href="/graveyard-keeper-2-zombies/">Zombies</a> Stage 3</td>
+</tr>
+<tr>
+<td>Know when red skulls matter</td>
+<td><a href="/graveyard-keeper-2-zombies/">Zombies</a> Stage 4 + <a href="/graveyard-keeper-2-red-skull-zombies/">Red Skull Zombies</a></td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h2>Separate the worker jobs (don’t mix roles)</h2>
+<p>Fextralife Factory Automation (edited 2026-09-25) frames three distinct jobs — treat them as non-interchangeable:</p>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Problem it solves</th>
+<th>Done when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Station zombie</strong></td>
+<td>Performs the craft at a staffed bench</td>
+<td>Recipe completes on a real workstation</td>
+</tr>
+<tr>
+<td><strong>Zombie Supplier Station</strong> worker</td>
+<td>Keeps production stations fed without you hand-carrying every input (Zombie Assistant tech unlocks the early Supplier Station)</td>
+<td>Inputs arrive without constant babysitting</td>
+</tr>
+<tr>
+<td><strong>Zombie Carousel</strong> worker</td>
+<td>Provides conveyor <strong>capacity</strong> for factory belts</td>
+<td>Total capacity meets belt demand</td>
+</tr>
+<tr>
+<td><strong>Zombie Supply Porter</strong></td>
+<td>Collects packed goods from Factory Supply Stations into Supply Storage</td>
+<td>Outputs clear instead of clogging supply stations</td>
+</tr>
+</tbody>
+</table>
+<p>A Bioreactor-class auto-crafter is an exception (does not take a station zombie) — confirm on the building tooltip when you unlock it.</p>
+<hr/>
+<h2>Factory layout principles</h2>
+<table>
+<thead>
+<tr>
+<th>Principle</th>
+<th>Practical rule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Start with <strong>one complete module</strong></td>
+<td>One output you actually need, full input→process→output route, before sprawling</td>
+</tr>
+<tr>
+<td>Storage proximity</td>
+<td>Chests / Conveyor Chests within short path of stations</td>
+</tr>
+<tr>
+<td>Single-purpose lanes</td>
+<td>Don’t cross every zombie through one chokepoint</td>
+</tr>
+<tr>
+<td>Input → process → output order</td>
+<td>Place in flow direction</td>
+</tr>
+<tr>
+<td>Bottleneck first</td>
+<td>Automate the station that idles you most — not “all machines at once”</td>
+</tr>
+<tr>
+<td>Expand after stable loop</td>
+<td>Copy a working cell; don’t duplicate a jam</td>
+</tr>
+</tbody>
+</table>
+<pre><code>[Input storage / Conveyor Chest] → [Station A + station zombie] → [Output belt / storage]
+        ↑ Supplier Station                      ↑ Supply Porter (for packed town supplies)
+                 Carousel workers power belt capacity
+</code></pre>
+<hr/>
+<h2>Power / carousel notes (capacity, not “speed gospel”)</h2>
+<table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>Practical rule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>What power means</td>
+<td>Belt pieces, splitters, underground conveyors, and Supply Stations each add <strong>demand</strong>; Carousel workers add <strong>capacity</strong></td>
+</tr>
+<tr>
+<td>Capacity figures commonly cited</td>
+<td>Each active Carousel worker adds capacity (Fextralife cites 7, or 10 with Beltmaster — confirm after patches)</td>
+</tr>
+<tr>
+<td>Spare capacity</td>
+<td>Lets you place more conveyor pieces; it does <strong>not</strong> by itself make recipes faster</td>
+</tr>
+<tr>
+<td>Crafted “Zombie Power” items</td>
+<td>Later recipe ingredients — not the same thing as Carousel capacity</td>
+</tr>
+</tbody>
+</table>
+<p>Omit “best carousel ratio” absolutes until you measure your own network.</p>
+<hr/>
+<h2>Mistake table</h2>
+<table>
+<thead>
+<tr>
+<th>Mistake</th>
+<th>What breaks</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Automating before first reliable workers</td>
+<td>Empty “factory” fantasy</td>
+<td>Finish <a href="/graveyard-keeper-2-zombies/">Zombies</a> Stage 3</td>
+</tr>
+<tr>
+<td>Storage across the map</td>
+<td>Pathing dead time</td>
+<td>Move chests adjacent</td>
+</tr>
+<tr>
+<td>One chest for all items</td>
+<td>Sorting hell / wrong inputs</td>
+<td>Split storage / filters by loop</td>
+</tr>
+<tr>
+<td>No Supply Porter for packed outputs</td>
+<td>Supply Station backups</td>
+<td>Assign porter; free Supply Storage space</td>
+</tr>
+<tr>
+<td>Belts stop across the factory</td>
+<td>Capacity &lt; demand</td>
+<td>Staff more Carousels or trim belts</td>
+</tr>
+<tr>
+<td>Materials arrive but craft never starts</td>
+<td>Wrong recipe / mastery / missing extension</td>
+<td>Match worker + machine tier to the recipe</td>
+</tr>
+<tr>
+<td>Ignoring worker quality on key stations</td>
+<td>Slow critical craft</td>
+<td>Prep better corpses → <a href="/graveyard-keeper-2-red-skull-zombies/">Red Skull Zombies</a></td>
+</tr>
+<tr>
+<td>Unlocking random factory techs</td>
+<td>Points wasted</td>
+<td>Follow <a href="/graveyard-keeper-2-tech-tree-priority/">Tech Priority</a></td>
+</tr>
+<tr>
+<td>Expanding a jammed cell</td>
+<td>Bigger chaos</td>
+<td>Troubleshoot the first blocked stage</td>
+</tr>
+<tr>
+<td>Copying GK1 factory muscle memory</td>
+<td>Wrong game assumptions</td>
+<td>Re-check every module in GK2</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h2>Manual assign → light logistics → factory (maturity model)</h2>
+<table>
+<thead>
+<tr>
+<th>Maturity</th>
+<th>What you do</th>
+<th>Stop advancing if…</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>M1 Manual</strong></td>
+<td>Assign jobs one-by-one; watch cycles</td>
+<td>Jobs don’t complete</td>
+</tr>
+<tr>
+<td><strong>M2 Light logistics</strong></td>
+<td>Add Supplier Station; nearby storage</td>
+<td>Still babysitting every input</td>
+</tr>
+<tr>
+<td><strong>M3 Factory cell</strong></td>
+<td>One module with belts + Carousel capacity + clear outputs</td>
+<td>Cell jams unresolved</td>
+</tr>
+<tr>
+<td><strong>M4 Expand</strong></td>
+<td>Duplicate cells; unlock more modules; Supply Porter for town packs</td>
+<td>Expanding a broken cell</td>
+</tr>
+</tbody>
+</table>
+<h2>Worker quality at automation stage</h2>
+<table>
+<thead>
+<tr>
+<th>Station importance</th>
+<th>Worker policy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bottleneck craft</td>
+<td>Improve corpse/collar/perk quality → <a href="/graveyard-keeper-2-red-skull-zombies/">Red Skull Zombies</a></td>
+</tr>
+<tr>
+<td>Bulk simple jobs / transporters</td>
+<td>Any reliable worker OK (low red often fine)</td>
+</tr>
+<tr>
+<td>Carousel / porter roles</td>
+<td>Prioritize reliability and free zombie-limit budget over max reds</td>
+</tr>
+<tr>
+<td>Don’t</td>
+<td>Replace entire army before one loop is stable</td>
+</tr>
+</tbody>
+</table>
+<h2>Tech unlocks that matter</h2>
+<table>
+<thead>
+<tr>
+<th>Priority bias</th>
+<th>Why</th>
+<th>Page</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Zombie Assistant → Supplier Station</td>
+<td>Makes early loops real without full factory</td>
+<td><a href="/graveyard-keeper-2-tech-tree-priority/">Tech Priority</a></td>
+</tr>
+<tr>
+<td>Factory / Carousel / conveyor unlocks</td>
+<td>Needed for M3 cells</td>
+<td>Confirm names on your tree</td>
+</tr>
+<tr>
+<td>Station capacity / extension nodes</td>
+<td>Removes recipe locks</td>
+<td>Match to the craft you actually queue</td>
+</tr>
+<tr>
+<td>Skip late cosmetics</td>
+<td>Don’t tourist</td>
+<td>Tech Priority Later/Skip tiers</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h2>Done when (stable loop checklist)</h2>
+<ul>
+<li>[ ] One input→station→output loop runs without you for a meaningful stretch  </li>
+<li>[ ] Supplier Station and/or Supply Porter roles assigned correctly for that loop  </li>
+<li>[ ] Carousel capacity ≥ belt demand (if using conveyors)  </li>
+<li>[ ] Storage placement fixed after at least one jam  </li>
+<li>[ ] Mistake table reviewed against your layout  </li>
+<li>[ ] Next expansion copied from a working cell — not a new maze  </li>
+<li>[ ] Worker quality improved only on bottleneck stations  </li>
+</ul>
+<hr/>
+<h2>FAQ</h2>
+<p><strong>Q: When am I ready to automate vs still manually assigning?</strong><br/>
+A: When several zombies already complete jobs reliably. If assignment itself is broken, stay on the zombies hub.</p>
+<p><strong>Q: What do Supplier / Porter zombies do?</strong><br/>
+A: Supplier Station workers feed inputs to production; Supply Porters move packed factory supplies into Supply Storage. Carousel workers provide belt capacity — a different job.</p>
+<p><strong>Q: What layout mistakes break production?</strong><br/>
+A: Far storage, single mega-chest, missing porters, capacity shortfalls, expanding before one loop is stable — see mistake table.</p>
+<p><strong>Q: Which techs should I unlock before expanding the factory?</strong><br/>
+A: Zombie Assistant / Supplier Station first, then factory/carousel gates for the module you need — <a href="/graveyard-keeper-2-tech-tree-priority/">Tech Priority</a>.</p>
+<p><strong>Q: How does corpse/worker quality still matter?</strong><br/>
+A: Key stations still benefit from better perk slots. Prep on <a href="/graveyard-keeper-2-autopsy-skulls/">Autopsy</a> and <a href="/graveyard-keeper-2-red-skull-zombies/">Red Skull Zombies</a>; don’t mass-replace every zombie at once.</p>
+<p><strong>Q: Where is the full zombie unlock guide?</strong><br/>
+A: <a href="/graveyard-keeper-2-zombies/">Graveyard Keeper 2 Zombies</a> — this page assumes workers exist.</p>
+<hr/>
+<h2>Also read</h2>
+<ul>
+<li><a href="/graveyard-keeper-2-zombies/">Graveyard Keeper 2 Zombies</a> — parent hub  </li>
+<li><a href="/graveyard-keeper-2-tech-tree-priority/">Graveyard Keeper 2 Tech Tree Priority</a> </li>
+<li><a href="/graveyard-keeper-2-autopsy-skulls/">Graveyard Keeper 2 Autopsy &amp; Skulls</a> </li>
+<li><a href="/graveyard-keeper-2-red-skull-zombies/">Graveyard Keeper 2 Red Skull Zombies</a> </li>
+<li><a href="/graveyard-keeper-2-beginner-guide/">Graveyard Keeper 2 Beginner Guide</a> </li>
+</ul>
+<hr/>
+<h2>Reference</h2>
+<ul>
+<li><a href="https://graveyardkeeper2.wiki.fextralife.com/Factory_Automation">Fextralife — Factory Automation</a> </li>
+<li><a href="https://wikily.gg/graveyard-keeper-2/zombies">Wikily — Zombies</a> </li>
+<li><a href="https://wikily.gg/graveyard-keeper-2/buildings/zombie-carousel">Wikily — Zombie Carousel</a> </li>
+</ul>
+<hr/>
+    </article>
+    <aside class="related" aria-label="Also read">
+      <h2>Also read</h2>
+      <ul>
+      <li><a href="/graveyard-keeper-2-beginner-guide/">Start here — Beginner priorities</a> — Hour 1 → Week 1 phase board and “done when” checklists — not a wiki dump.</li>
+      <li><a href="/graveyard-keeper-2-autopsy-skulls/">Autopsy &amp; skulls triage</a> — Bury vs zombie vs cremate decision tree; white vs red skull purpose (GK2, not GK1).</li>
+      <li><a href="/graveyard-keeper-2-zombies/">Zombies hub</a> — Unlock → put to work → optimize in one pipeline; Dream Dust gate called out.</li>
+      <li><a href="/graveyard-keeper-2-tech-tree-priority/">Tech tree priority</a> — Opinionated early unlock order — checklist, not a full tech catalog.</li>
+      <li><a href="/graveyard-keeper-2-dream-dust/">Dream Dust gate</a> — Accurate Plague Doctor unlock steps — then jump to the zombies hub.</li>
+      <li><a href="/graveyard-keeper-2-energy-food-bread/">Energy, insanity &amp; early bread</a> — Day-1 survival loop: meters + wheat→flour→bread ladder.</li>
+      <li><a href="/graveyard-keeper-2-faith-sermons/">Faith &amp; sermons weekly loop</a> — Sermon prep + church quality checklist so Faith keeps progression moving.</li>
+      <li><a href="/graveyard-keeper-2-red-skull-zombies/">Red skull zombies</a> — Worker optimization niche — spoke from autopsy + zombies.</li>
+      <li><a href="/graveyard-keeper-2-alchemy-runes/">Alchemy &amp; runes how-to</a> — Systemic how-to wedge vs wiki formula DB — feeds Dream Dust.</li>
+
+      </ul>
+    </aside>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-stamp">Checked for Graveyard Keeper 2 · patch 1.005 (as of 2026-09-26) — numbers may change; re-check after updates.</p>
+      <p class="footer-disclaimer">
+        Independent how-to guides for <strong>Graveyard Keeper 2</strong>.
+        Not affiliated with Lazy Bear Games, tinyBuild, or Steam.
+        Numbers and UI strings may change after patches — confirm costs and UI labels in-game on your save.
+      </p>
+      <p class="footer-links">
+        <a href="/">Home</a> ·
+        <a href="/graveyard-keeper-2-beginner-guide/">Beginner</a> ·
+        <a href="/graveyard-keeper-2-autopsy-skulls/">Autopsy</a> ·
+        <a href="/graveyard-keeper-2-zombies/">Zombies</a> ·
+        <a href="/graveyard-keeper-2-tech-tree-priority/">Tech</a> ·
+        <a href="/graveyard-keeper-2-dream-dust/">Dream Dust</a> ·
+        <a href="/graveyard-keeper-2-energy-food-bread/">Energy</a> ·
+        <a href="/graveyard-keeper-2-faith-sermons/">Faith</a> ·
+        <a href="/graveyard-keeper-2-automation/">Automation</a> ·
+        <a href="/graveyard-keeper-2-red-skull-zombies/">Red Skull</a> ·
+        <a href="/graveyard-keeper-2-alchemy-runes/">Alchemy</a>
+      </p>
+      <p class="footer-ref">
+        For item/recipe/quest DB depth, see
+        <a href="https://wikily.gg/graveyard-keeper-2" rel="noopener noreferrer" target="_blank">Wikily</a>
+        (outbound reference).
+      </p>
+      <p class="footer-media">
+        Screenshots and key art © Lazy Bear Games / tinyBuild via Steam store media.
+        This site is unaffiliated.
+      </p>
+    </div>
+  </footer>
+  <!-- Ads / gtag: TBD — do not invent IDs -->
+</body>
+</html>

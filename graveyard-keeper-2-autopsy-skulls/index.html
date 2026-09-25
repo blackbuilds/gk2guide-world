@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Graveyard Keeper 2 Autopsy &amp; Skulls: Bury vs Zombie vs Cremate</title>
+  <meta name="description" content="Graveyard Keeper 2 corpse triage: when to bury, resurrect, or discard; white vs red skull purpose split; verified GK2 rules — not GK1 Fandom advice." />
+  <link rel="canonical" href="https://gk2guide.world/graveyard-keeper-2-autopsy-skulls/" />
+  <meta property="og:title" content="Graveyard Keeper 2 Autopsy &amp; Skulls: Bury vs Zombie vs Cremate" />
+  <meta property="og:description" content="Graveyard Keeper 2 corpse triage: when to bury, resurrect, or discard; white vs red skull purpose split; verified GK2 rules — not GK1 Fandom advice." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://gk2guide.world/graveyard-keeper-2-autopsy-skulls/" />
+  <!-- og:image TBD -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Graveyard Keeper 2 Autopsy &amp; Skulls: Bury vs Zombie vs Cremate" />
+  <meta name="twitter:description" content="Graveyard Keeper 2 corpse triage: when to bury, resurrect, or discard; white vs red skull purpose split; verified GK2 rules — not GK1 Fandom advice." />
+  <link rel="stylesheet" href="/assets/site.css" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Graveyard Keeper 2 Autopsy Guide: Skull Triage (Bury / Resurrect / Cremate)","description":"Graveyard Keeper 2 corpse triage: when to bury, resurrect, or discard; white vs red skull purpose split; verified GK2 rules — not GK1 Fandom advice.","dateModified":"2026-09-26","author":{"@type":"Organization","name":"GK2 Guide"},"publisher":{"@type":"Organization","name":"GK2 Guide","url":"https://gk2guide.world/"},"mainEntityOfPage":"https://gk2guide.world/graveyard-keeper-2-autopsy-skulls/","inLanguage":"en","about":"Graveyard Keeper 2"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"When should I bury vs resurrect vs cremate/dispose?","acceptedAnswer":{"@type":"Answer","text":"Bury for yard goals when white rows can be covered; resurrect when you need workers and the body is a red-skull candidate; cremate/dispose when the body hurts the yard and isn’t worth prep. Use the decision tree above."}},{"@type":"Question","name":"What are white skulls for vs red skulls for in Graveyard Keeper 2?","acceptedAnswer":{"@type":"Answer","text":"White leans graveyard/burial quality (after decoration covers red rows). Red leans zombie perk slots and consumes covering capacity on graves. Do not treat GK1 Fandom numbers as GK2 facts."}},{"@type":"Question","name":"What makes a “bad corpse” for the graveyard?","acceptedAnswer":{"@type":"Answer","text":"A body whose red rows eat decoration capacity so white rows never score — or a body you bury without enough headstone/fence quality. When in doubt, autopsy to diagnose, then bury / cremate / hold for zombies."}},{"@type":"Question","name":"Which autopsy actions are safe early vs save for later?","acceptedAnswer":{"@type":"Answer","text":"Early: learn to read skulls and avoid obviously harmful burials. Later: deliberate worker prep and embalming once resurrection and collars matter. Don’t delay first workers for perfect reds."}},{"@type":"Question","name":"How does this page connect to zombie workers?","acceptedAnswer":{"@type":"Answer","text":"This page decides which bodies become workers; Zombies covers unlock, Resurrection Table, assignment, and optimize stages. Deep red-skull optimization → Red Skull Zombies ."}},{"@type":"Question","name":"Why do other guides disagree / why might GK1 advice be wrong?","acceptedAnswer":{"@type":"Answer","text":"Patch churn + franchise bleed. Always prefer the in-game GK2 corpse readout; when public GK2 guides conflict on organ math, we link Wikily instead of inventing a compromise table."}},{"@type":"Question","name":"Do embalming solutions belong here?","acceptedAnswer":{"@type":"Answer","text":"Conceptually: corpse vs zombie solutions shift white/red without surgery. Exact mix recipes → Wikily embalming table."}}]}</script>
+  <!-- Google tag / Adsterra: TBD — leave empty until approved -->
+</head>
+<body class="layout-guide">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="/assets/media/header-keyart.jpg" alt="" width="34" height="34" />
+        </span>
+        <span class="brand-name">GK2 Guide</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+      <label for="nav-toggle" class="nav-toggle-btn" aria-label="Open menu"><span></span></label>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/graveyard-keeper-2-beginner-guide/">Beginner</a>
+        <a href="/graveyard-keeper-2-autopsy-skulls/" aria-current="page" class="is-active">Autopsy</a>
+        <a href="/graveyard-keeper-2-zombies/">Zombies</a>
+        <a href="/graveyard-keeper-2-tech-tree-priority/">Tech</a>
+        <a href="/graveyard-keeper-2-dream-dust/">Dream Dust</a>
+        <a href="/graveyard-keeper-2-energy-food-bread/">Energy</a>
+        <a href="/graveyard-keeper-2-faith-sermons/">Faith</a>
+        <a href="/graveyard-keeper-2-automation/">Automation</a>
+        <a href="/graveyard-keeper-2-red-skull-zombies/">Red Skull</a>
+        <a href="/graveyard-keeper-2-alchemy-runes/">Alchemy</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="guide">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li aria-current="page">Autopsy</li>
+      </ol>
+    </nav>
+    <p class="version-stamp">Checked for Graveyard Keeper 2 · patch 1.005 (as of 2026-09-26) — numbers may change; re-check after updates.</p>
+    <article class="guide-body">
+<h1>Graveyard Keeper 2 Autopsy Guide: Skull Triage (Bury / Resurrect / Cremate)</h1>
+    <figure class="scene-figure">
+      <img src="/assets/media/header-keyart.jpg" alt="Graveyard Keeper 2 key art: the Keeper holding a shovel and a skull with gold eyes, zombies and donkey behind him" width="1920" height="1080" loading="eager" decoding="async" />
+      <figcaption>Skull motif from official key art — Steam media set has no morgue/autopsy-table shot.</figcaption>
+    </figure>
+<p><strong>Checked for Graveyard Keeper 2 · patch 1.005 (as of 2026-09-26) — numbers may change; re-check after updates.</strong></p>
+<hr/>
+<p>This <strong>Graveyard Keeper 2</strong> page answers one job: <strong>what do I do with this corpse?</strong> Use the triage tree, then deep-link to zombies when you are preparing workers. We do <strong>not</strong> dump a full organ encyclopedia — that stays on Wikily.</p>
+<p><strong>GK1 bleed callout:</strong> Search results still surface Graveyard Keeper 1 Fandom organ tips. Those are a different game. Do not paste GK1 skull math into GK2 decisions.</p>
+<hr/>
+<h2>TL;DR — Triage in 30 seconds</h2>
+<table>
+<thead>
+<tr>
+<th>Outcome</th>
+<th>Use when</th>
+<th>Next</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bury</strong></td>
+<td>Body has useful <strong>white</strong> skulls and you can cover its <strong>red</strong> rows with grave decorations / wreaths so white rows can score</td>
+<td>Decorate the plot; improve headstone/fence if white rows are uncovered</td>
+</tr>
+<tr>
+<td><strong>Resurrect → zombie</strong></td>
+<td>You need workers and the body is a labor candidate (more <strong>red</strong> skulls = more perk slots)</td>
+<td>Prep on this page → finish on <a href="/graveyard-keeper-2-zombies/">Zombies</a></td>
+</tr>
+<tr>
+<td><strong>Cremate / dispose</strong></td>
+<td>Body would wreck the yard and is not worth worker prep</td>
+<td>Crematorium when built (still earns a Burial Certificate); river dispose is a last resort with no certificate before that</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ignore for this page:</strong> full organ DB, embalming recipe encyclopedia, GK1 Fandom tables. Deep red-skull worker craft → <a href="/graveyard-keeper-2-red-skull-zombies/">Red Skull Zombies</a>.</p>
+<hr/>
+<h2>White skull vs red skull (GK2 purpose split)</h2>
+<p>Treat this as a <strong>purpose split</strong>, then confirm the readout on the corpse you are holding:</p>
+<table>
+<thead>
+<tr>
+<th>Skull type</th>
+<th>Primary job</th>
+<th>Practical rule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>White skulls</strong></td>
+<td>Graveyard / burial quality</td>
+<td>A white skull row counts toward grave quality <strong>once matched by decoration / wreath quality</strong> on that grave</td>
+</tr>
+<tr>
+<td><strong>Red skulls</strong></td>
+<td>Zombie worker perk slots</td>
+<td>Each red skull unlocks a zombie perk slot after resurrection — and for burial, each red row <strong>consumes decoration capacity</strong> without giving a positive quality point</td>
+</tr>
+<tr>
+<td><strong>Both matter</strong></td>
+<td>Same corpse can lean yard <em>or</em> labor</td>
+<td>Decide the goal <strong>before</strong> you cut</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Done when:</strong> You can say out loud whether today’s corpse is for <strong>yard</strong> or <strong>worker</strong> before you operate.</p>
+<p>Public GK2 references (Wikily + Fextralife Corpse Quality, as of 2026-09-26) agree on this purpose split. Per-organ ±skull values vary by organ version — read the body in front of you; do not memorize a universal “always remove X” list.</p>
+<hr/>
+<h2>Decision tree: What do I do with this corpse?</h2>
+<ol>
+<li><strong>Is the Resurrection Table / zombie pipeline online?</strong><br/>
+   - <strong>No</strong> → Prefer bury “good enough” bodies; cremate/dispose truly bad ones; don’t stockpile forever without a plan.<br/>
+   - <strong>Yes</strong> → Continue.</li>
+<li><strong>Is your goal right now graveyard quality or labor?</strong><br/>
+   - <strong>Yard quality</strong> → Keep / improve white-facing outcomes; remove red-facing organs when a clean extraction helps covering → Bury.<br/>
+   - <strong>Labor</strong> → Prefer higher red-skull bodies with vital organs intact → <a href="/graveyard-keeper-2-zombies/">Zombies hub</a>.</li>
+<li><strong>Is this corpse actively bad for the yard if buried as-is?</strong><br/>
+   - <strong>Yes, and not a worker candidate</strong> → Cremate (or river dispose if Crematorium is not online yet) rather than poisoning plots.<br/>
+   - <strong>Yes, but salvageable with autopsy</strong> → Autopsy workflow below, then re-check.<br/>
+   - <strong>No</strong> → Bury or resurrect per goal in step 2.</li>
+<li><strong>Are you tempted to use GK1 organ memory?</strong><br/>
+   - <strong>Stop.</strong> Re-check the GK2 corpse panel or open Wikily GK2 corpses — never trust GK1 Fandom by default.</li>
+</ol>
+<pre><code>Corpse arrives
+ ├─ Zombies unlocked?
+ │   ├─ No → Bury good-enough / cremate-dispose bad / learn autopsy safely
+ │   └─ Yes → Goal?
+ │        ├─ Yard quality → Improve white-facing traits → BURY
+ │        ├─ Worker needed → Prep red-facing traits → RESURRECT (→ /zombies/)
+ │        └─ Irredeemable for both → CREMATE / DISPOSE
+ └─ Never: paste GK1 organ tables
+</code></pre>
+<hr/>
+<h2>Autopsy workflow (steps)</h2>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>What you do</th>
+<th>Done when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Place the corpse on the Autopsy Table</td>
+<td>Station accepts the body</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Inspect the white/red skull readout <strong>before</strong> cutting</td>
+<td>You know starting state and organ variants on <em>this</em> body</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Remove / treat organs with a <strong>goal</strong> (yard vs worker)</td>
+<td>Each action has a reason — not “harvest everything”</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Re-check skull state after each meaningful change</td>
+<td>You stop when the triage outcome is clear</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Choose bury / resurrect / cremate-dispose</td>
+<td>Body leaves the table with a decision recorded</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Extraction outcomes (conceptual):</strong> Operations run on ticks tied to Anatomy mastery. Enough successes keep the organ as an item; mid results remove it ruined; too few successes can leave a Surgeon’s Error (worse skull balance). Exact tick tables → Wikily Reference.</p>
+<p><strong>Early vs later:</strong> Early — practice reading skulls and avoiding obviously bad burials. Later — deliberate worker prep once collars and perk slots matter. Organ-by-organ encyclopedia → Wikily, not here.</p>
+<hr/>
+<h2>Graveyard quality: what actually hurts you</h2>
+<table>
+<thead>
+<tr>
+<th>Risk</th>
+<th>Why it matters</th>
+<th>What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Burying high-red bodies without enough decoration</td>
+<td>Red rows eat wreath/decoration capacity before white rows can score</td>
+<td>Autopsy toward fewer reds, or cremate, or hold for zombies</td>
+</tr>
+<tr>
+<td>Ignoring covers / wreaths / headstones</td>
+<td>White skulls do not help until decoration reaches those rows</td>
+<td>Upgrade grave furniture when white rows are uncovered</td>
+</tr>
+<tr>
+<td>Clearing the morgue by force-burying everything</td>
+<td>Short-term tidy, long-term yard debt</td>
+<td>Prefer Crematorium when available</td>
+</tr>
+<tr>
+<td>Treating every corpse as a future max-red worker</td>
+<td>Blocks yard goals and slows Day-1</td>
+<td>First bury safely; perfect workers later → <a href="/graveyard-keeper-2-red-skull-zombies/">Red Skull Zombies</a></td>
+</tr>
+</tbody>
+</table>
+<p>Absorb the “bad corpses” mid-tail into this hub rather than a thin separate page.</p>
+<hr/>
+<h2>Preparing bodies for zombies</h2>
+<p>Once resurrection is available:</p>
+<ol>
+<li>Pick corpses for <strong>labor</strong>, not every body.  </li>
+<li>Prefer <strong>more red / fewer white</strong> for workers; keep vital organs intact (missing core body parts block resurrection — soft parts like Blood/Flesh/Fat are a different category).  </li>
+<li>Match collar tier to the red-skull count you are aiming for (bronze collars cover a limited early range — confirm on the collar tooltip).  </li>
+<li>Hand off to the zombies pipeline for Resurrection Table, assignment, collars. → <a href="/graveyard-keeper-2-zombies/">Graveyard Keeper 2 Zombies</a> </li>
+<li>Mid-game automation still cares about worker quality. → <a href="/graveyard-keeper-2-automation/">Automation</a> · <a href="/graveyard-keeper-2-red-skull-zombies/">Red Skull Zombies</a></li>
+</ol>
+<p><strong>Do not</strong> expand this section into a full max-red recipe guide.</p>
+<hr/>
+<h2>Wreaths / covers / decorations rule</h2>
+<p>Agreed conceptual rule across Wikily and Fextralife Corpse Quality (as of 2026-09-26):</p>
+<ul>
+<li>Each <strong>red</strong> skull row must be covered by decoration / wreath capacity before <strong>white</strong> rows start contributing positive graveyard quality points.  </li>
+<li>A red-covered row still does <strong>not</strong> score a positive quality point — it only spends covering capacity.  </li>
+<li>Once all useful white rows are covered, extra decoration on that corpse cannot invent more white skulls.</li>
+</ul>
+<p>Exact decoration point values per fence/headstone upgrade: confirm in-game and on Wikily; we omit a fake covering spreadsheet here.</p>
+<hr/>
+<h2>Cremate vs river dispose</h2>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>When</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Crematorium</strong></td>
+<td>Built in the Morgue; body not worth burial or worker prep</td>
+<td>Clean removal; still grants a Burial Certificate (AllThings.How / common GK2 how-tos, as of 2026-09-26)</td>
+</tr>
+<tr>
+<td><strong>River dispose</strong></td>
+<td>Before Crematorium is online, or emergency morgue clear</td>
+<td>Typically no certificate — last resort</td>
+</tr>
+<tr>
+<td><strong>Hold in morgue</strong></td>
+<td>Worker candidate waiting for Resurrection Table / Envy-day power</td>
+<td>Don’t let the morgue soft-lock corpse delivery</td>
+</tr>
+</tbody>
+</table>
+<p>Steam Update 1.005 fixed Crematorium stuck-with-corpse cases — if a station soft-locks after a patch, re-check the news feed before assuming a guide is wrong.</p>
+<hr/>
+<h2>Common mistakes &amp; GK1 myths to ignore</h2>
+<table>
+<thead>
+<tr>
+<th>Mistake / myth</th>
+<th>GK2 Guide stance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>“Use the GK1 organ table; skulls work the same”</td>
+<td><strong>Reject</strong> — wrong game</td>
+</tr>
+<tr>
+<td>Harvest every organ every time</td>
+<td>Goal-first triage; empty harvesting wastes time and can create Surgeon’s Errors</td>
+</tr>
+<tr>
+<td>Bury trash to “make room”</td>
+<td>Prefer cremate/dispose when available</td>
+</tr>
+<tr>
+<td>Perfect red-skull before first worker</td>
+<td>Get <em>a</em> worker online first → <a href="/graveyard-keeper-2-zombies/">Zombies</a></td>
+</tr>
+<tr>
+<td>Skip reading organ variants on <em>this</em> corpse</td>
+<td>Same organ type can carry different skull mixes</td>
+</tr>
+<tr>
+<td>Clone Wikily organ DB onto this page</td>
+<td>Link out; own the decision tree</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<h2>FAQ</h2>
+<p><strong>Q: When should I bury vs resurrect vs cremate/dispose?</strong><br/>
+A: Bury for yard goals when white rows can be covered; resurrect when you need workers and the body is a red-skull candidate; cremate/dispose when the body hurts the yard and isn’t worth prep. Use the decision tree above.</p>
+<p><strong>Q: What are white skulls for vs red skulls for in Graveyard Keeper 2?</strong><br/>
+A: White leans graveyard/burial quality (after decoration covers red rows). Red leans zombie perk slots and consumes covering capacity on graves. Do not treat GK1 Fandom numbers as GK2 facts.</p>
+<p><strong>Q: What makes a “bad corpse” for the graveyard?</strong><br/>
+A: A body whose red rows eat decoration capacity so white rows never score — or a body you bury without enough headstone/fence quality. When in doubt, autopsy to diagnose, then bury / cremate / hold for zombies.</p>
+<p><strong>Q: Which autopsy actions are safe early vs save for later?</strong><br/>
+A: Early: learn to read skulls and avoid obviously harmful burials. Later: deliberate worker prep and embalming once resurrection and collars matter. Don’t delay first workers for perfect reds.</p>
+<p><strong>Q: How does this page connect to zombie workers?</strong><br/>
+A: This page decides <em>which</em> bodies become workers; <a href="/graveyard-keeper-2-zombies/">Zombies</a> covers unlock, Resurrection Table, assignment, and optimize stages. Deep red-skull optimization → <a href="/graveyard-keeper-2-red-skull-zombies/">Red Skull Zombies</a>.</p>
+<p><strong>Q: Why do other guides disagree / why might GK1 advice be wrong?</strong><br/>
+A: Patch churn + franchise bleed. Always prefer the in-game GK2 corpse readout; when public GK2 guides conflict on organ math, we link Wikily instead of inventing a compromise table.</p>
+<p><strong>Q: Do embalming solutions belong here?</strong><br/>
+A: Conceptually: corpse vs zombie solutions shift white/red without surgery. Exact mix recipes → Wikily embalming table.</p>
+<hr/>
+<h2>Also read</h2>
+<ul>
+<li><a href="/graveyard-keeper-2-beginner-guide/">Graveyard Keeper 2 Beginner Guide</a> — Day-1 phase boards  </li>
+<li><a href="/graveyard-keeper-2-zombies/">Graveyard Keeper 2 Zombies</a> — unlock → work → optimize  </li>
+<li><a href="/graveyard-keeper-2-red-skull-zombies/">Graveyard Keeper 2 Red Skull Zombies</a> — worker optimization spoke  </li>
+<li><a href="/graveyard-keeper-2-automation/">Graveyard Keeper 2 Automation</a> — quality workers in factory context  </li>
+</ul>
+<hr/>
+<h2>Reference (Wikily)</h2>
+<ul>
+<li><a href="https://wikily.gg/graveyard-keeper-2/corpses-and-autopsy">Wikily — Corpses and autopsy</a> for organ detail DB after triage is clear  </li>
+<li><a href="https://graveyardkeeper2.wiki.fextralife.com/Corpse_Quality">Fextralife — Corpse Quality</a> for burial vs zombie preference framing  </li>
+</ul>
+<hr/>
+    </article>
+    <aside class="related" aria-label="Also read">
+      <h2>Also read</h2>
+      <ul>
+      <li><a href="/graveyard-keeper-2-beginner-guide/">Start here — Beginner priorities</a> — Hour 1 → Week 1 phase board and “done when” checklists — not a wiki dump.</li>
+      <li><a href="/graveyard-keeper-2-zombies/">Zombies hub</a> — Unlock → put to work → optimize in one pipeline; Dream Dust gate called out.</li>
+      <li><a href="/graveyard-keeper-2-tech-tree-priority/">Tech tree priority</a> — Opinionated early unlock order — checklist, not a full tech catalog.</li>
+      <li><a href="/graveyard-keeper-2-dream-dust/">Dream Dust gate</a> — Accurate Plague Doctor unlock steps — then jump to the zombies hub.</li>
+      <li><a href="/graveyard-keeper-2-energy-food-bread/">Energy, insanity &amp; early bread</a> — Day-1 survival loop: meters + wheat→flour→bread ladder.</li>
+      <li><a href="/graveyard-keeper-2-faith-sermons/">Faith &amp; sermons weekly loop</a> — Sermon prep + church quality checklist so Faith keeps progression moving.</li>
+      <li><a href="/graveyard-keeper-2-automation/">Automation checklist</a> — Supplier/porter pathing and factory mistakes — after basic zombie workers.</li>
+      <li><a href="/graveyard-keeper-2-red-skull-zombies/">Red skull zombies</a> — Worker optimization niche — spoke from autopsy + zombies.</li>
+      <li><a href="/graveyard-keeper-2-alchemy-runes/">Alchemy &amp; runes how-to</a> — Systemic how-to wedge vs wiki formula DB — feeds Dream Dust.</li>
+
+      </ul>
+    </aside>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-stamp">Checked for Graveyard Keeper 2 · patch 1.005 (as of 2026-09-26) — numbers may change; re-check after updates.</p>
+      <p class="footer-disclaimer">
+        Independent how-to guides for <strong>Graveyard Keeper 2</strong>.
+        Not affiliated with Lazy Bear Games, tinyBuild, or Steam.
+        Numbers and UI strings may change after patches — confirm costs and UI labels in-game on your save.
+      </p>
+      <p class="footer-links">
+        <a href="/">Home</a> ·
+        <a href="/graveyard-keeper-2-beginner-guide/">Beginner</a> ·
+        <a href="/graveyard-keeper-2-autopsy-skulls/">Autopsy</a> ·
+        <a href="/graveyard-keeper-2-zombies/">Zombies</a> ·
+        <a href="/graveyard-keeper-2-tech-tree-priority/">Tech</a> ·
+        <a href="/graveyard-keeper-2-dream-dust/">Dream Dust</a> ·
+        <a href="/graveyard-keeper-2-energy-food-bread/">Energy</a> ·
+        <a href="/graveyard-keeper-2-faith-sermons/">Faith</a> ·
+        <a href="/graveyard-keeper-2-automation/">Automation</a> ·
+        <a href="/graveyard-keeper-2-red-skull-zombies/">Red Skull</a> ·
+        <a href="/graveyard-keeper-2-alchemy-runes/">Alchemy</a>
+      </p>
+      <p class="footer-ref">
+        For item/recipe/quest DB depth, see
+        <a href="https://wikily.gg/graveyard-keeper-2" rel="noopener noreferrer" target="_blank">Wikily</a>
+        (outbound reference).
+      </p>
+      <p class="footer-media">
+        Screenshots and key art © Lazy Bear Games / tinyBuild via Steam store media.
+        This site is unaffiliated.
+      </p>
+    </div>
+  </footer>
+  <!-- Ads / gtag: TBD — do not invent IDs -->
+</body>
+</html>

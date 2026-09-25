@@ -1,0 +1,12 @@
+# Cloudflare Pages / Netlify-style redirects — non-slash → slash for live slugs
+/graveyard-keeper-2-beginner-guide /graveyard-keeper-2-beginner-guide/ 301
+/graveyard-keeper-2-autopsy-skulls /graveyard-keeper-2-autopsy-skulls/ 301
+/graveyard-keeper-2-zombies /graveyard-keeper-2-zombies/ 301
+/graveyard-keeper-2-tech-tree-priority /graveyard-keeper-2-tech-tree-priority/ 301
+/graveyard-keeper-2-dream-dust /graveyard-keeper-2-dream-dust/ 301
+/graveyard-keeper-2-energy-food-bread /graveyard-keeper-2-energy-food-bread/ 301
+/graveyard-keeper-2-faith-sermons /graveyard-keeper-2-faith-sermons/ 301
+/graveyard-keeper-2-automation /graveyard-keeper-2-automation/ 301
+/graveyard-keeper-2-red-skull-zombies /graveyard-keeper-2-red-skull-zombies/ 301
+/graveyard-keeper-2-alchemy-runes /graveyard-keeper-2-alchemy-runes/ 301
+/* /404.html 404
