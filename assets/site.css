@@ -376,25 +376,42 @@ mark.verify {
 .utility h1 { margin-top: 0; }
 
 @media (max-width: 720px) {
+  /* wrap so open nav can sit on a full-width row under brand|burger */
   .header-inner {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .brand {
+    flex: 0 1 auto;
+    min-width: 0;
   }
   .nav-toggle-btn {
     display: inline-flex;
+    margin-left: auto;
   }
   .primary-nav {
     display: none;
+    order: 3; /* after brand + burger on the flex line */
     flex-direction: column;
-    width: 100%;
-    margin-left: 0;
     flex-basis: 100%;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
     gap: 0;
-    padding: 0.5rem 0 0.75rem;
+    padding: 0.35rem 0 0.5rem;
     border-top: 1px solid var(--border);
+    background: var(--bg-elev);
+    border-radius: 0 0 var(--radius) var(--radius);
   }
   .primary-nav a {
     display: block;
-    padding: 0.65rem 0.15rem;
+    width: 100%;
+    padding: 0.85rem var(--pad);
+    border-bottom: 1px solid var(--border);
+  }
+  .primary-nav a:last-child {
+    border-bottom: none;
   }
   #nav-toggle:checked ~ .primary-nav {
     display: flex;
