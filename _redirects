@@ -1,4 +1,7 @@
 # Cloudflare Pages / Netlify-style redirects — non-slash → slash for live slugs
+/corpses /corpses/ 301
+/systems /systems/ 301
+/about /about/ 301
 /graveyard-keeper-2-beginner-guide /graveyard-keeper-2-beginner-guide/ 301
 /graveyard-keeper-2-autopsy-skulls /graveyard-keeper-2-autopsy-skulls/ 301
 /graveyard-keeper-2-zombies /graveyard-keeper-2-zombies/ 301
