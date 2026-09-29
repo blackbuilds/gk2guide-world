@@ -452,3 +452,27 @@ mark.stamp {
 .ad-slot--mpu {
   max-width: 300px;
 }
+
+/* Ad slots: reserved heights + MPU row below card grids */
+.ad-slot--mobile-banner {
+  min-height: 50px;
+}
+.ad-slot--mpu {
+  min-height: 250px;
+  width: 100%;
+}
+.ad-slot--native {
+  min-height: 200px;
+}
+.ad-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  clear: both;
+}
+.ad-row--mpu {
+  margin: 1.25rem 0 0;
+}
+.ad-row .ad-slot {
+  margin: 0 auto;
+}
