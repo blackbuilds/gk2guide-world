@@ -481,3 +481,16 @@ mark.stamp {
 .ad-row--mpu + .card-grid {
   margin-top: 1.25rem;
 }
+
+/* Hub card grids at 3 columns: centre a last row of 2 cards (6 half-tracks, each card spans 2) */
+@media (min-width: 803px) and (max-width: 1040px) {
+  .hub-page .card-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  .hub-page .card-grid > .card {
+    grid-column: span 2;
+  }
+  .hub-page .card-grid > .card:nth-child(3n+1):nth-last-child(2) {
+    grid-column: 2 / span 2;
+  }
+}
