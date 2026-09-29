@@ -423,3 +423,32 @@ mark.stamp {
   .hero { min-height: 220px; }
   .scene-figure img { max-height: 260px; }
 }
+
+/* —— Ad slots —— */
+.ad-slot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.25rem auto;
+}
+.ad-slot iframe {
+  display: block;
+  border: 0;
+}
+/* Mobile 320x50 banner: show mainly on small screens */
+.ad-slot--mobile-banner {
+  max-width: 320px;
+}
+@media (min-width: 721px) {
+  .ad-slot--mobile-banner {
+    display: none;
+  }
+}
+/* Native banner container */
+.ad-slot--native {
+  max-width: 740px;
+}
+/* 300x250 MPU */
+.ad-slot--mpu {
+  max-width: 300px;
+}
