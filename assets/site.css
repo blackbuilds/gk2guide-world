@@ -21,8 +21,8 @@
   --fog-purple: #4a3a55;
   --link: #c9a86c;
   --link-hover: #e8d09a;
-  --verify-bg: #2e2610;
-  --verify-text: #d4b85a;
+  --stamp-bg: #2e2610;
+  --stamp-text: #d4b85a;
   --coming: #7a6e60;
   --danger: #c08080;
   --radius: 8px;
@@ -171,8 +171,8 @@ main {
 
 .version-stamp {
   font-size: 0.88rem;
-  color: var(--verify-text);
-  background: var(--verify-bg);
+  color: var(--stamp-text);
+  background: var(--stamp-bg);
   border: 1px solid #5a4a1a;
   border-radius: var(--radius);
   padding: 0.65rem 0.9rem;
@@ -343,8 +343,8 @@ a.card:hover { border-color: var(--candle); transform: translateY(-1px); }
 .guide-body th { background: var(--bg-elev); color: var(--candle); }
 .guide-body tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
 
-mark.verify {
-  background: var(--verify-bg); color: var(--verify-text);
+mark.stamp {
+  background: var(--stamp-bg); color: var(--stamp-text);
   padding: 0.05em 0.35em; border-radius: 3px; font-weight: 700;
   font-size: 0.92em;
 }
@@ -371,7 +371,7 @@ mark.verify {
   padding: 1.5rem var(--pad) 2rem;
   color: var(--muted); font-size: 0.92rem;
 }
-.footer-stamp { color: var(--verify-text); font-size: 0.88rem; }
+.footer-stamp { color: var(--stamp-text); font-size: 0.88rem; }
 .footer-disclaimer { max-width: 70ch; }
 .footer-media { max-width: 70ch; font-size: 0.85rem; color: #8a7a68; }
 .footer-links a, .footer-ref a { color: var(--link); }
@@ -422,33 +422,4 @@ mark.verify {
   .hero-copy { padding: 1.25rem 1rem; }
   .hero { min-height: 220px; }
   .scene-figure img { max-height: 260px; }
-}
-
-/* —— Ad slots —— */
-.ad-slot {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1.25rem auto;
-}
-.ad-slot iframe {
-  display: block;
-  border: 0;
-}
-/* Mobile 320x50 banner: show mainly on small screens */
-.ad-slot--mobile-banner {
-  max-width: 320px;
-}
-@media (min-width: 721px) {
-  .ad-slot--mobile-banner {
-    display: none;
-  }
-}
-/* Native banner container */
-.ad-slot--native {
-  max-width: 740px;
-}
-/* 300x250 MPU */
-.ad-slot--mpu {
-  max-width: 300px;
 }
