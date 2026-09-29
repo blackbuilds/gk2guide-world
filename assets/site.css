@@ -453,7 +453,7 @@ mark.stamp {
   max-width: 300px;
 }
 
-/* —— R10: reserved slot heights (no layout shift) + MPU row below card grids —— */
+/* Ad slots: reserved heights + MPU row below card grids */
 .ad-slot--mobile-banner {
   min-height: 50px;
 }

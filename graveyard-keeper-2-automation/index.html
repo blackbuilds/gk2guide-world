@@ -65,7 +65,6 @@
     <p class="version-stamp">Checked for Graveyard Keeper 2 · patch 1.007 — numbers may change; re-check after updates.</p>
     <article class="guide-body">
 <h1>Graveyard Keeper 2 Automation: Supplier / Factory Checklist</h1>
-    <template id="gk2-ad-m320">
     <div class="ad-slot ad-slot--mobile-banner" aria-label="Advertisement">
       <script>
         atOptions = {
@@ -78,8 +77,6 @@
       </script>
       <script src="https://www.highrevenueformat.com/cfb9555b6dcfd8adb89e2cf0f98b2f76/invoke.js"></script>
     </div>
-    </template>
-    <script>if(window.matchMedia&&window.matchMedia("(max-width: 720px)").matches){document.write(document.getElementById("gk2-ad-m320").innerHTML);}</script>
     <figure class="scene-figure">
       <img src="/assets/media/ss-build-workspace.jpg" alt="Graveyard Keeper 2 build-mode yard: dashed build zones with saws, workbench, log stacks, and a stone furnace in production" width="1920" height="1080" loading="eager" decoding="async" />
       <figcaption>Build-mode station layout — planning stations and pathing before supplier/factory mistakes pile up.</figcaption>
@@ -371,7 +368,7 @@
 <li><strong>Carousel staffed / power ≥ demand?</strong> A power zombie must be on the <strong>Zombie Carousel</strong>. Capacity must cover every belt piece + Supply Station. Carousel staffed ≠ station craft running.</li>
 <li><strong>Belt arrows &amp; connections?</strong> Check that the belt actually connects input → smithy → assembly → supply and that <strong>arrows face the intended flow</strong>. Wrong direction is the #1 silent break.</li>
 <li><strong>Station has a worker?</strong> A separate craft zombie must be on the smithy / assembly. Do <strong>not</strong> expect the Carousel zombie to also craft.</li>
-<li><strong>Mastery / tool matches recipe?</strong> Recipe may need higher Building / Metallurgy mastery, a station extension, or a better tool on the worker — the red lock text and tool icon on the recipe show which (a zombie gets its mastery from the tool it carries).</li>
+<li><strong>Mastery / tool matches recipe?</strong> Recipe may need higher Building / Metallurgy mastery, a station extension, or a better tool on the worker — the red lock text and tool icon on the recipe show which (the tool a zombie carries adds a bonus to its mastery, on top of its own skills and perks).</li>
 <li><strong>Inputs present?</strong> Iron + coal (or other inputs) in the feeding chest / belt path; empty chest = silent stall. Conveyor chests can manually inject a few ingots to speed the first test.</li>
 <li><strong>Recipe queued?</strong> Station has the intended recipe queued (iron supplies / crates for the smoke test). Wrong recipe looks like a jam. Queue a large batch so the line self-runs.</li>
 <li><strong>Supply station + porter path open?</strong> Supply Station at the end of the line; Supply Porter → pallet → long porter corridor clear of rubble.</li>
